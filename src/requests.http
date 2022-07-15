@@ -1,0 +1,29 @@
+### Post The Godfather
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title": "The Godfather"
+}
+
+### Post The Godfather II
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title": "The Godfather II"
+}
+
+### Post Avatar
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title": "Avatar"
+}
+
+### Clear Database
+DELETE http://localhost:8080/movies
+
+### Get all the movies
+GET http://localhost:8080/movies

@@ -3,24 +3,57 @@ POST http://localhost:8080/movies
 Content-Type: application/json
 
 {
-  "title": "The Godfather"
+  "title": "The Godfather",
+  "imdbID": "tt0068646",
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
 }
 
-### Post The Godfather II
+### Post The Imitation Game
 POST http://localhost:8080/movies
 Content-Type: application/json
 
 {
-  "title": "The Godfather II"
+  "title": "The Imitation Game",
+  "imdbID": "tt2084970",
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_SX300.jpg"
 }
 
-### Post Avatar
+### Post A Clockwork Orange
 POST http://localhost:8080/movies
 Content-Type: application/json
 
 {
-  "title": "Avatar"
+  "title": "A Clockwork Orange",
+  "imdbID": "tt0066921",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_SX300.jpg"
 }
+
+### 2001: A Space Odyssey
+POST http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "title": "2001: A Space Odyssey",
+  "imdbID": "tt0062622",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMmNlYzRiNDctZWNhMi00MzI4LThkZTctMTUzMmZkMmFmNThmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+
+}
+
+### Get by id
+GET http://localhost:8080/movies/16
+
+### Update movie
+PUT http://localhost:8080/movies/16
+Content-Type: application/json
+
+{
+  "title": "The Imitation Game Updated",
+  "imdbID": "tt0062622",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMmNlYzRiNDctZWNhMi00MzI4LThkZTctMTUzMmZkMmFmNThmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+}
+
+### Delete Movie
+DELETE http://localhost:8080/movies/19
 
 ### Clear Database
 DELETE http://localhost:8080/movies

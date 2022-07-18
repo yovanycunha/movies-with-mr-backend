@@ -6,13 +6,12 @@ import javax.persistence.*
 data class Movie(
     @Id @GeneratedValue
     val id: Long? = null,
-    val title: String
+    val title: String,
+    val imdbID: String,
+    val poster: String
 
     /*@OneToMany(cascade = arrayOf(CascadeType.ALL), fetch = FetchType.LAZY)
     private val watchListId: MutableList<WatchList>? = ArrayList(),*/
-    /*val title: String,
-    val imdbID: Long,
-    val plot: String,*/
 )
 
 @Entity(name = "watchlists")

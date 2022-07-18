@@ -2,9 +2,8 @@ package com.example.movieswithmrbackend.Service
 
 import com.example.movieswithmrbackend.Model.Movie
 import com.example.movieswithmrbackend.Repository.MovieRepository
-import org.springframework.stereotype.Repository
 import org.springframework.stereotype.Service
-import java.util.Optional
+import java.util.*
 
 @Service
 class MovieServiceImpl(private val repository: MovieRepository): MovieService {
@@ -31,7 +30,7 @@ class MovieServiceImpl(private val repository: MovieRepository): MovieService {
     override fun update(id: Long, movie: Movie): Optional<Movie> {
         val optional = getById(id)
 
-        if (optional.isEmpty) {
+        if (optional.isEmpty()) {
             return optional
         }
 

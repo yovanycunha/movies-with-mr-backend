@@ -30,7 +30,7 @@ class MovieServiceImpl(private val repository: MovieRepository): MovieService {
     override fun update(id: Long, movie: Movie): Optional<Movie> {
         val optional = getById(id)
 
-        if (optional.isEmpty()) {
+        if (!optional.isPresent) {
             return optional
         }
 

@@ -43,7 +43,7 @@ Content-Type: application/json
 GET http://localhost:8080/movies/16
 
 ### Update movie
-PUT http://localhost:8080/movies/16
+PUT http://localhost:8080/movies/1
 Content-Type: application/json
 
 {
